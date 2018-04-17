@@ -1,9 +1,9 @@
 
 
-#' All restrooms
+#' All refuge restrooms
 #'
-#' All restrooms, ordered by date added or last updated, with the most recent
-#' additions and updates at the top.
+#' All listed refuge restrooms, ordered by date added or last updated, with
+#' the most recent additions and updates at the top.
 #'
 #' @param accessible If \code{TRUE}, only returns accessible restrooms.
 #' Defaults to \code{FALSE}.
@@ -22,7 +22,8 @@
 #' }
 #'
 
-rfg_all_restrooms <- function(accessible = FALSE, unisex = FALSE, verbose = TRUE) {
+rfg_all_restrooms <- function(accessible = FALSE, unisex = FALSE,
+                              verbose = TRUE) {
   ada_query <- ada_function(accessible)
 
   unisex_query <- unisex_function(unisex)

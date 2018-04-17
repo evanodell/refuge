@@ -12,13 +12,23 @@ knitr::opts_chunk$set(
   out.width = "100%"
 )
 ```
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/refuge)](https://cran.r-project.org/package=refuge)
+[![GitHub tag](https://img.shields.io/github/tag/evanodell/refuge.svg)](https://github.com/evanodell/refuge)
+[![](https://cranlogs.r-pkg.org/badges/grand-total/refuge)](https://dgrtwo.shinyapps.io/cranview/)
 [![Travis build status](https://travis-ci.org/evanodell/refuge.svg?branch=master)](https://travis-ci.org/evanodell/refuge)
 [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/evanodell/refuge?branch=master&svg=true)](https://ci.appveyor.com/project/evanodell/refuge)
- [![Coverage status](https://codecov.io/gh/evanodell/refuge/branch/master/graph/badge.svg)](https://codecov.io/github/evanodell/refuge?branch=master)
+[![Coverage status](https://codecov.io/gh/evanodell/refuge/branch/master/graph/badge.svg)](https://codecov.io/github/evanodell/refuge?branch=master)
+[![DOI](https://zenodo.org/badge/129826417.svg)](https://zenodo.org/badge/latestdoi/129826417)
+
+
 
 # refuge
 
 `refuge` provides access to the [Refuge Restrooms API](https://www.refugerestrooms.org/api/docs/#!/restrooms) in R.
+
+[Refuge Restrooms](https://www.refugerestrooms.org/) "is a web application that seeks to provide safe restroom access for transgender, intersex, and gender nonconforming individuals." The web application includes a public API, which this package allows access to. The API does not require users to sign up or use a key. For further details on the API or the organisation behind it, see the [API docs](https://www.refugerestrooms.org/api/docs/), or the [Refuge Restrooms homepage](https://www.refugerestrooms.org/).
 
 ## Installation
 
@@ -31,6 +41,8 @@ devtools::install_github("evanodell/refuge")
 
 ## Use
 
+Locating all restrooms close to a given set of coordinates, in this case somewhere in New Jersey:
+
 ```{r}
 library(refuge)
 
@@ -40,6 +52,34 @@ tibble::glimpse(bathrooms)
 
 ```
 
+
+Locating all unisex, accessible restrooms in Toronto, using the `rfg_search()` function.
+
+```{r}
+
+toronto <- rfg_search("toronto", accessible = TRUE, unisex = TRUE)
+
+tibble::glimpse(toronto)
+
+```
+
+
 Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md).
   By participating in this project you agree to abide by its terms.
 
+Odell E (2018). _refuge: Locate Trans and Intersex-Friendly Toilets_. doi:
+10.5281/zenodo.1219900 (URL: http://doi.org/10.5281/zenodo.1219900), R package version
+0.1.0, <URL: https://github.com/evanodell/refuge>.
+
+A BibTeX entry for LaTeX users is
+
+```
+  @Manual{,
+    title = {{refuge}: Locate Trans and Intersex-Friendly Toilets},
+    author = {Evan Odell},
+    year = {2018},
+    note = {R package version 0.1.0},
+    doi = {10.5281/zenodo.1219900},
+    url = {https://github.com/evanodell/refuge},
+  }
+```

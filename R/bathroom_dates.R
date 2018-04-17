@@ -7,6 +7,7 @@
 #'
 #' @param date A date in "yyyy-mm-dd" format, or any format that can be
 #' coerced to a date with \code{as.Date()}.
+#'
 #' @inheritParams rfg_all_restrooms
 #'
 #' @return A tibble with all bathrooms recorded or updated on or after

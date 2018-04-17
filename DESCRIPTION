@@ -1,9 +1,14 @@
 Package: refuge
-Version: 0.0.0.9000
-Title: Locate Trans and Intersex-Friendly Toilets with R
-Description: What the package does (one paragraph).
+Version: 0.1.0
+Title: Locate Trans and Intersex-Friendly Toilets
+Description: "Refuge" is a web-application for locating trans and 
+    intersex-friendly restrooms, including unisex and accessible restrooms. 
+    Includes data on the location of restrooms, along with directions, 
+    comments, user ratings and amenities. 
+    See <https://www.refugerestrooms.org/api/docs/> for full API documentation.
 Authors@R: person("Evan", "Odell",
-    email = "evanodell91@gmail.com", role = c("aut", "cre"))
+    email = "evanodell91@gmail.com", role = c("aut", "cre"),
+    comment = c(ORCID='0000-0003-1845-808X'))
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

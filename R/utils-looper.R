@@ -16,13 +16,19 @@ query_looper <- function(query, verbose) {
   }
 
   pager <- (ceiling(as.numeric(got$headers$`x-total-pages`) / 100))
-  ### Need solution for failures
+
+  if (pager == 0) {
+    stop("No restrooms available with given search parameters.",
+         call. = FALSE)
+  }
+
   seq_list <- seq(from = 1, to = pager, by = 1)
 
   pages <- list()
 
   for (i in seq_along(seq_list)) {
-    mydata <- jsonlite::fromJSON(paste0(query, "00&page=", seq_list[[i]]), flatten = TRUE)
+    mydata <- jsonlite::fromJSON(paste0(query, "00&page=", seq_list[[i]]),
+                                 flatten = TRUE)
     if (verbose == TRUE) {
       message("Retrieving page ", seq_list[[i]], " of ", pager)
     }

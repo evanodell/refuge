@@ -2,7 +2,7 @@
 % Please edit documentation in R/all_bathrooms.R
 \name{rfg_all_restrooms}
 \alias{rfg_all_restrooms}
-\title{All restrooms}
+\title{All refuge restrooms}
 \usage{
 rfg_all_restrooms(accessible = FALSE, unisex = FALSE, verbose = TRUE)
 }
@@ -20,8 +20,8 @@ Defaults to \code{TRUE}.}
 A tibble with details on all listed bathrooms.
 }
 \description{
-All restrooms, ordered by date added or last updated, with the most recent
-additions and updates at the top.
+All listed refuge restrooms, ordered by date added or last updated, with
+the most recent additions and updates at the top.
 }
 \examples{
 \donttest{

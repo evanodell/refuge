@@ -22,7 +22,8 @@
 #'
 
 
-rfg_location <- function(lat, lng, accessible = FALSE, unisex = FALSE, verbose = TRUE) {
+rfg_location <- function(lat, lng, accessible = FALSE,
+                         unisex = FALSE, verbose = TRUE) {
   if (missing(lat) || missing(lng)) {
     stop("Values for the `lat` and `lng` parameters must be included",
       call. = FALSE
