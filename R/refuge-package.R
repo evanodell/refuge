@@ -11,9 +11,10 @@
 #' see the \href{API docs}{https://www.refugerestrooms.org/api/docs/}, or the
 #' \href{Refuge Restrooms homepage}{https://www.refugerestrooms.org/}.
 #'
+#'
 #' @keywords internal
 #' @importFrom jsonlite fromJSON
-#' @import httr
-#' @import tibble
-#' @import dplyr
+#' @importFrom httr status_code GET
+#' @importFrom tibble as_tibble
+#' @importFrom dplyr bind_rows
 "_PACKAGE"

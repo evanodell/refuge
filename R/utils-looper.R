@@ -3,10 +3,20 @@
 query_looper <- function(query, verbose) {
   got <- httr::GET(query, httr::accept_json())
 
-  http_status(got)
+  if (httr::status_code(got) != 200) {
+    stop(
+      sprintf(
+        "Refuge API request failed [%s]\n%s\n<%s>",
+        httr::status_code(got),
+        got$message,
+        got$documentation_url
+      ),
+      call. = FALSE
+    )
+  }
 
   pager <- (ceiling(as.numeric(got$headers$`x-total-pages`) / 100))
-
+  ### Need solution for failures
   seq_list <- seq(from = 1, to = pager, by = 1)
 
   pages <- list()

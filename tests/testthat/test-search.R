@@ -1,6 +1,10 @@
 context("test-search.R")
 
-test_that("multiplication works", {
-  x <- rfg_search_restrooms("toronto")
+test_that("searching works", {
+
+  skip_on_cran()
+
+  x <- rfg_search("toronto")
   expect_true(tibble::is.tibble(x))
+  expect_equal(length(x), 17)
 })

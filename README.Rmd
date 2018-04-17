@@ -29,6 +29,16 @@ You can install the development version from [GitHub](https://github.com/) with:
 devtools::install_github("evanodell/refuge")
 ```
 
+## Use
+
+```{r}
+library(refuge)
+
+bathrooms <- rfg_location(lat=39, lng=-75)
+
+tibble::glimpse(bathrooms)
+
+```
 
 Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md).
   By participating in this project you agree to abide by its terms.

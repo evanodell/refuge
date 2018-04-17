@@ -15,7 +15,7 @@
 #'
 #' @examples \donttest{
 #'
-#' c <- rfg_location(lat=49, lng=0)
+#' c <- rfg_location(lat=39, lng=-75)
 #'
 #' }
 #'
@@ -36,7 +36,7 @@ rfg_location <- function(lat, lng, accessible = FALSE, unisex = FALSE, verbose =
   coords <- paste0("lat=", lat, "&lng=", lng)
 
   query <- paste0(
-    base_url, "by_location.json?", coords, ada_query,
+    base_url, "/by_location.json?", coords, ada_query,
     unisex_query, "&per_page=1"
   )
 

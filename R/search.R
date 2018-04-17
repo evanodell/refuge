@@ -18,7 +18,7 @@
 #' }
 
 
-rfg_search_restrooms <- function(search, accessible = FALSE,
+rfg_search <- function(search, accessible = FALSE,
                                  unisex = FALSE, verbose = TRUE) {
   if (missing(search)) {
     stop("Values for the `search`` parameter must be included", call. = FALSE)
