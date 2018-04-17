@@ -4,3 +4,8 @@
 ^appveyor\.yml$
 ^README\.Rmd$
 ^\.travis\.yml$
+^codecov\.yml$
+^_pkgdown\.yml$
+^docs$
+^\.github$
+^CODE_OF_CONDUCT\.md$

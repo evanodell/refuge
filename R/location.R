@@ -38,7 +38,7 @@ rfg_location <- function(lat, lng, accessible = FALSE, unisex = FALSE, verbose =
   query <- paste0(base_url, "by_location.json?", coords, ada_query,
                   unisex_query, "&per_page=1")
 
-  df <- query_looper(query)
+  df <- query_looper(query, verbose)
 
   df
 }

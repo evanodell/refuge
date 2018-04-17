@@ -1,6 +1,6 @@
 
 
-query_looper <- function(query) {
+query_looper <- function(query, verbose) {
 
   got <- httr::GET(query, httr::accept_json())
 

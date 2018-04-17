@@ -34,7 +34,7 @@ rfg_date <- function(date = NULL, accessible = FALSE,
                   "&day=", format(date, "%d"), "&month=", format(date, "%m"),
                   "&year=", format(date, "%y"), "&per_page=1")
 
-  df <- query_looper(query)
+  df <- query_looper(query, verbose)
 
   df
 
