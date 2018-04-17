@@ -1,12 +1,11 @@
 
 
 query_looper <- function(query, verbose) {
-
   got <- httr::GET(query, httr::accept_json())
 
   http_status(got)
 
-  pager <- (ceiling(as.numeric(got$headers$`x-total-pages`)/100))
+  pager <- (ceiling(as.numeric(got$headers$`x-total-pages`) / 100))
 
   seq_list <- seq(from = 1, to = pager, by = 1)
 
@@ -23,5 +22,4 @@ query_looper <- function(query, verbose) {
   df <- tibble::as_tibble(dplyr::bind_rows(pages))
 
   df
-
 }

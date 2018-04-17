@@ -25,7 +25,7 @@
 rfg_location <- function(lat, lng, accessible = FALSE, unisex = FALSE, verbose = TRUE) {
   if (missing(lat) || missing(lng)) {
     stop("Values for the `lat` and `lng` parameters must be included",
-         call. = FALSE
+      call. = FALSE
     )
   }
 
@@ -35,8 +35,10 @@ rfg_location <- function(lat, lng, accessible = FALSE, unisex = FALSE, verbose =
 
   coords <- paste0("lat=", lat, "&lng=", lng)
 
-  query <- paste0(base_url, "by_location.json?", coords, ada_query,
-                  unisex_query, "&per_page=1")
+  query <- paste0(
+    base_url, "by_location.json?", coords, ada_query,
+    unisex_query, "&per_page=1"
+  )
 
   df <- query_looper(query, verbose)
 

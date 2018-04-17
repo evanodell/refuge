@@ -22,7 +22,7 @@
 
 rfg_date <- function(date = NULL, accessible = FALSE,
                      unisex = FALSE, verbose = TRUE) {
-  if(is.null(date)) stop("Please enter a date", call. = FALSE)
+  if (is.null(date)) stop("Please enter a date", call. = FALSE)
 
   date <- as.Date(date)
 
@@ -30,12 +30,13 @@ rfg_date <- function(date = NULL, accessible = FALSE,
 
   unisex_query <- unisex_function(unisex)
 
-  query <- paste0(base_url, "/by_date.json?", ada_query, unisex_query,
-                  "&day=", format(date, "%d"), "&month=", format(date, "%m"),
-                  "&year=", format(date, "%y"), "&per_page=1")
+  query <- paste0(
+    base_url, "/by_date.json?", ada_query, unisex_query,
+    "&day=", format(date, "%d"), "&month=", format(date, "%m"),
+    "&year=", format(date, "%y"), "&per_page=1"
+  )
 
   df <- query_looper(query, verbose)
 
   df
-
 }

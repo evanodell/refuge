@@ -1,11 +1,9 @@
 
 
 unisex_function <- function(unisex) {
-
-  if(unisex==TRUE){
+  if (unisex == TRUE) {
     "&unisex=TRUE"
   } else {
     ""
   }
-
 }
