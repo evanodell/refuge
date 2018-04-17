@@ -11,19 +11,28 @@ rfg_location(lat, lng, accessible = FALSE, unisex = FALSE, verbose = TRUE)
 
 \item{lng}{Location longitude}
 
-\item{accessible}{If \code{TRUE}, only returns accessible restrooms. Defaults to \code{FALSE}.}
+\item{accessible}{If \code{TRUE}, only returns accessible restrooms.
+Defaults to \code{FALSE}.}
 
-\item{unisex}{If \code{TRUE}, only returns unisex restrooms. Defaults to \code{FALSE}.}
+\item{unisex}{If \code{TRUE}, only returns unisex restrooms.
+Defaults to \code{FALSE}.}
 
-\item{verbose}{If \code{TRUE}, prints query progress. Defaults to \code{TRUE}.}
+\item{verbose}{If \code{TRUE}, prints query progress.
+Defaults to \code{TRUE}.}
 }
 \value{
 A tibble with details of any and all nearby refuge bathrooms.
 }
 \description{
-Given a pair of coordinates (latitude and longitude), finds any nearby bathrooms.
+Given a pair of coordinates (latitude and longitude), finds any nearby
+bathrooms, subject to other parameters.
 }
 \examples{
+\donttest{
+
+c <- rfg_location(lat=49, lng=0)
+
+}
 
 
 }

@@ -2,7 +2,7 @@
 % Please edit documentation in R/bathroom_dates.R
 \name{rfg_date}
 \alias{rfg_date}
-\title{Title}
+\title{Bathrooms by dates}
 \usage{
 rfg_date(date = NULL, accessible = FALSE, unisex = FALSE,
   verbose = TRUE)
@@ -11,14 +11,22 @@ rfg_date(date = NULL, accessible = FALSE, unisex = FALSE,
 \item{date}{A date in "yyyy-mm-dd" format, or any format that can be
 coerced to a date with \code{as.Date()}.}
 
-\item{accessible}{If \code{TRUE}, only returns accessible restrooms. Defaults to \code{FALSE}.}
+\item{accessible}{If \code{TRUE}, only returns accessible restrooms.
+Defaults to \code{FALSE}.}
 
-\item{unisex}{If \code{TRUE}, only returns unisex restrooms. Defaults to \code{FALSE}.}
+\item{unisex}{If \code{TRUE}, only returns unisex restrooms.
+Defaults to \code{FALSE}.}
 
-\item{verbose}{If \code{TRUE}, prints query progress. Defaults to \code{TRUE}.}
+\item{verbose}{If \code{TRUE}, prints query progress.
+Defaults to \code{TRUE}.}
+}
+\value{
+A tibble with all bathrooms recorded or updated on or after
+the given date.
 }
 \description{
-Title
+Requests all records on bathrooms created or updated on or after a
+given date.
 }
 \examples{
 \donttest{

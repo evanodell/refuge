@@ -3,3 +3,8 @@
 export(rfg_all_restrooms)
 export(rfg_date)
 export(rfg_location)
+export(rfg_search_restrooms)
+import(dplyr)
+import(httr)
+import(tibble)
+importFrom(jsonlite,fromJSON)
