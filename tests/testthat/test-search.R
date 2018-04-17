@@ -1,7 +1,6 @@
 context("test-search.R")
 
 test_that("searching works", {
-
   skip_on_cran()
 
   x <- rfg_search("toronto")

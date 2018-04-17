@@ -19,7 +19,8 @@ query_looper <- function(query, verbose) {
 
   if (pager == 0) {
     stop("No restrooms available with given search parameters.",
-         call. = FALSE)
+      call. = FALSE
+    )
   }
 
   seq_list <- seq(from = 1, to = pager, by = 1)
@@ -28,7 +29,8 @@ query_looper <- function(query, verbose) {
 
   for (i in seq_along(seq_list)) {
     mydata <- jsonlite::fromJSON(paste0(query, "00&page=", seq_list[[i]]),
-                                 flatten = TRUE)
+      flatten = TRUE
+    )
     if (verbose == TRUE) {
       message("Retrieving page ", seq_list[[i]], " of ", pager)
     }
