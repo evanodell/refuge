@@ -1,6 +1,6 @@
 Package: refuge
 Version: 0.0.0.9000
-Title: What the Package Does (One Line, Title Case)
+Title: Locate Trans and Intersex-Friendly Toilets with R
 Description: What the package does (one paragraph).
 Authors@R: person("Evan", "Odell",
     email = "evanodell91@gmail.com", role = c("aut", "cre"))
