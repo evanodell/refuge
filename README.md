@@ -107,9 +107,7 @@ tibble::glimpse(toronto)
 #> $ changing_table <lgl> FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE,...
 ```
 
-Please note that this project is released with a [Contributor Code of
-Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree
-to abide by its terms.
+## Citing `refuge`
 
 Odell E (2018). *refuge: Locate Trans and Intersex-Friendly Toilets*.
 doi: 10.5281/zenodo.1219900 (URL:
@@ -128,3 +126,12 @@ A BibTeX entry for LaTeX users is
     url = {https://github.com/evanodell/refuge},
   }
 ```
+
+## Notes
+
+Please note that this project is released with a [Contributor Code of
+Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree
+to abide by its terms.
+
+This project is not affiliated with the [Refuge
+Restrooms](https://www.refugerestrooms.org/) application.

@@ -63,9 +63,8 @@ tibble::glimpse(toronto)
 
 ```
 
-
-Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md).
-  By participating in this project you agree to abide by its terms.
+  
+## Citing `refuge`
 
 Odell E (2018). _refuge: Locate Trans and Intersex-Friendly Toilets_. doi:
 10.5281/zenodo.1219900 (URL: http://doi.org/10.5281/zenodo.1219900), R package version
@@ -83,3 +82,10 @@ A BibTeX entry for LaTeX users is
     url = {https://github.com/evanodell/refuge},
   }
 ```
+
+## Notes
+
+Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md).
+  By participating in this project you agree to abide by its terms.
+  
+This project is not affiliated with the [Refuge Restrooms](https://www.refugerestrooms.org/) application.
