@@ -30,5 +30,6 @@ Suggests:
     ggplot2,
     magrittr,
     viridis,
-    scales
+    scales,
+    mapproj
 VignetteBuilder: knitr
