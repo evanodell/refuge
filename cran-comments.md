@@ -1,7 +1,9 @@
 
 ## Submission Notes
 
-This is the first submission of the `refuge` package, with version for 0.1.0. 
+This is a resubmission of the `refuge` package, taking into account feedback 
+from CRAN to put 'refuge' in single quotes in the description, with 
+version number 0.1.1. 
 The package is for accessing the Refuge Restrooms API.
 
 ## Test environments
