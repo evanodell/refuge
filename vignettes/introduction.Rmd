@@ -24,6 +24,7 @@ knitr::opts_chunk$set(
 Refuge Restrooms uses all user supplied data, which can be messy, and result in inconsistent coverage. It is nonetheless still useful. The example below shows how to convert all US state names to the full name, lowercased, and create a map showing the number of unisex, Americans with Disability Act (ADA) accessible restrooms in each state.
 
 ```{r, fig.wide = TRUE}
+library(refuge)
 library(ggplot2)
 library(fiftystater)
 library(dplyr)
