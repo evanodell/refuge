@@ -21,7 +21,7 @@
 rfg_search <- function(search, accessible = FALSE,
                        unisex = FALSE, verbose = TRUE) {
   if (missing(search)) {
-    stop("Values for the `search`` parameter must be included", call. = FALSE)
+    stop("Values for the `search` parameter must be included", call. = FALSE)
   }
 
   ada_query <- ada_function(accessible)

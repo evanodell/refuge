@@ -17,7 +17,7 @@ status](https://codecov.io/gh/evanodell/refuge/branch/master/graph/badge.svg)](h
 
 # refuge
 
-`refuge` provides access to the [Refuge Restrooms
+The `refuge` package provides access to the [Refuge Restrooms
 API](https://www.refugerestrooms.org/api/docs/#!/restrooms) in R.
 
 [Refuge Restrooms](https://www.refugerestrooms.org/) “is a web
@@ -28,6 +28,8 @@ not require users to sign up or use a key. For further details on the
 API or the organisation behind it, see the [API
 docs](https://www.refugerestrooms.org/api/docs/), or the [Refuge
 Restrooms homepage](https://www.refugerestrooms.org/).
+
+The API does not require registration or an API key.
 
 ## Installation
 

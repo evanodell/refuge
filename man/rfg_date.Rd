@@ -11,7 +11,8 @@ rfg_date(date = NULL, accessible = FALSE, unisex = FALSE,
 \item{date}{A date in "yyyy-mm-dd" format, or any format that can be
 coerced to a date with \code{as.Date()}.}
 
-\item{accessible}{If \code{TRUE}, only returns accessible restrooms.
+\item{accessible}{If \code{TRUE}, only returns restrooms that meet the
+Americans with Disability Act standards for accessibility.
 Defaults to \code{FALSE}.}
 
 \item{unisex}{If \code{TRUE}, only returns unisex restrooms.

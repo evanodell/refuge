@@ -11,7 +11,8 @@ rfg_search(search, accessible = FALSE, unisex = FALSE, verbose = TRUE)
 wildcard searchs, searches all fields in all available records, and only
 returns exact (case-insensitive) matches.}
 
-\item{accessible}{If \code{TRUE}, only returns accessible restrooms.
+\item{accessible}{If \code{TRUE}, only returns restrooms that meet the
+Americans with Disability Act standards for accessibility.
 Defaults to \code{FALSE}.}
 
 \item{unisex}{If \code{TRUE}, only returns unisex restrooms.

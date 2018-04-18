@@ -7,7 +7,13 @@ test_that("location works", {
   expect_length(c, 19)
 
   expect_error(
-    tt <- rfg_location(lat = 90, lng = 0),
+    rfg_location(lat = 90, lng = 0),
     "No restrooms available with given search parameters."
   )
+
+  expect_error(
+    rfg_location(),
+    "Values for the `lat` and `lng` parameters must be included."
+  )
+
 })

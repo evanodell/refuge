@@ -11,6 +11,9 @@
 #' see the \href{API docs}{https://www.refugerestrooms.org/api/docs/}, or the
 #' \href{Refuge Restrooms homepage}{https://www.refugerestrooms.org/}.
 #'
+#' @description The API does not require an API key or user registration.
+#' Requests are made over HTTPS, and returned in JSON format. All request
+#' results are returned as tibbles.
 #'
 #' @keywords internal
 #' @importFrom jsonlite fromJSON

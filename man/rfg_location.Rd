@@ -11,7 +11,8 @@ rfg_location(lat, lng, accessible = FALSE, unisex = FALSE, verbose = TRUE)
 
 \item{lng}{Location longitude}
 
-\item{accessible}{If \code{TRUE}, only returns accessible restrooms.
+\item{accessible}{If \code{TRUE}, only returns restrooms that meet the
+Americans with Disability Act standards for accessibility.
 Defaults to \code{FALSE}.}
 
 \item{unisex}{If \code{TRUE}, only returns unisex restrooms.
