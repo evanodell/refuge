@@ -34,6 +34,4 @@ bathrooms, subject to other parameters.
 c <- rfg_location(lat=39, lng=-75)
 
 }
-
-
 }

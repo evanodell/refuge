@@ -4,7 +4,7 @@
 #'
 #' @param search A string to search for. Note that the API does not accept
 #' wildcard searchs, searches all fields in all available records, and only
-#' returns exact (case-insensitive) matches.
+#' returns exact (case-insensitive) whole-word matches.
 #' @inheritParams rfg_all_restrooms
 #'
 #'

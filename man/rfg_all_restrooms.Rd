@@ -30,5 +30,4 @@ the most recent additions and updates at the top.
 a <- rfg_all_restrooms(accessible = TRUE, unisex = TRUE)
 
 }
-
 }
