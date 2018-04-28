@@ -25,15 +25,23 @@ application that seeks to provide safe restroom access for transgender,
 intersex, and gender nonconforming individuals.” The web application
 includes a public API, which this package allows access to. The API does
 not require users to sign up or use a key. For further details on the
-API or the organisation behind it, see the [API
-docs](https://www.refugerestrooms.org/api/docs/), or the [Refuge
-Restrooms homepage](https://www.refugerestrooms.org/).
+API see the [API docs](https://www.refugerestrooms.org/api/docs/), or
+the package
+[vignette](https://docs.evanodell.com/refuge/articles/introduction.html).
+For details on the organisation providing this data, check out the
+[Refuge Restrooms homepage](https://www.refugerestrooms.org/).
 
 The API does not require registration or an API key.
 
 ## Installation
 
-You can install the development version from
+To install the latest version from CRAN, use:
+
+``` r
+install.packages("refuge")
+```
+
+You can install the latest development version from
 [GitHub](https://github.com/) with:
 
 ``` r
@@ -106,6 +114,9 @@ tibble::glimpse(toronto)
 #> $ country        <chr> "CA", "CA", "CA", "CA", "CA", "CA", "CA", "Cana...
 #> $ changing_table <lgl> FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE,...
 ```
+
+For more detailed examples, check out the
+[vignette](https://docs.evanodell.com/refuge/articles/introduction.html).
 
 ## Citing `refuge`
 

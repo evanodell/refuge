@@ -27,7 +27,7 @@ Refuge Restrooms uses all user supplied data, which can be messy, and result in 
 library(refuge)
 library(ggplot2)
 library(fiftystater)
-library(dplyr)
+library(dplyr, warn.conflicts = FALSE)
 library(magrittr)
 library(viridis)
 

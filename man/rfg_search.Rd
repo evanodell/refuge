@@ -9,7 +9,7 @@ rfg_search(search, accessible = FALSE, unisex = FALSE, verbose = TRUE)
 \arguments{
 \item{search}{A string to search for. Note that the API does not accept
 wildcard searchs, searches all fields in all available records, and only
-returns exact (case-insensitive) matches.}
+returns exact (case-insensitive) whole-word matches.}
 
 \item{accessible}{If \code{TRUE}, only returns restrooms that meet the
 Americans with Disability Act standards for accessibility.

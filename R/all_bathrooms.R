@@ -21,7 +21,6 @@
 #' a <- rfg_all_restrooms(accessible = TRUE, unisex = TRUE)
 #'
 #' }
-#'
 
 rfg_all_restrooms <- function(accessible = FALSE, unisex = FALSE,
                               verbose = TRUE) {
