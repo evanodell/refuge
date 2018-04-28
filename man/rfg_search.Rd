@@ -4,7 +4,8 @@
 \alias{rfg_search}
 \title{Restroom record search}
 \usage{
-rfg_search(search, accessible = FALSE, unisex = FALSE, verbose = TRUE)
+rfg_search(search, accessible = FALSE, unisex = FALSE, verbose = TRUE,
+  tidy = FALSE)
 }
 \arguments{
 \item{search}{A string to search for. Note that the API does not accept
@@ -20,6 +21,9 @@ Defaults to \code{FALSE}.}
 
 \item{verbose}{If \code{TRUE}, prints query progress.
 Defaults to \code{TRUE}.}
+
+\item{tidy}{If \code{TRUE}, makes state names more consistent.
+Defaults to \code{FALSE}.}
 }
 \value{
 A tibble with all bathrooms matching your search request

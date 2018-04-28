@@ -4,7 +4,8 @@
 \alias{rfg_all_restrooms}
 \title{All refuge restrooms}
 \usage{
-rfg_all_restrooms(accessible = FALSE, unisex = FALSE, verbose = TRUE)
+rfg_all_restrooms(accessible = FALSE, unisex = FALSE, verbose = TRUE,
+  tidy = FALSE)
 }
 \arguments{
 \item{accessible}{If \code{TRUE}, only returns restrooms that meet the
@@ -16,6 +17,9 @@ Defaults to \code{FALSE}.}
 
 \item{verbose}{If \code{TRUE}, prints query progress.
 Defaults to \code{TRUE}.}
+
+\item{tidy}{If \code{TRUE}, makes state names more consistent.
+Defaults to \code{FALSE}.}
 }
 \value{
 A tibble with details on all listed bathrooms.

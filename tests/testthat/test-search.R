@@ -8,5 +8,4 @@ test_that("searching works", {
   expect_equal(length(x), 17)
 
   expect_error(rfg_search(), "Values for the `search` parameter must be included")
-
 })

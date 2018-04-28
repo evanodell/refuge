@@ -4,7 +4,8 @@
 \alias{rfg_location}
 \title{Bathroom locations}
 \usage{
-rfg_location(lat, lng, accessible = FALSE, unisex = FALSE, verbose = TRUE)
+rfg_location(lat, lng, accessible = FALSE, unisex = FALSE, verbose = TRUE,
+  tidy = FALSE)
 }
 \arguments{
 \item{lat}{Location latitude}
@@ -20,6 +21,9 @@ Defaults to \code{FALSE}.}
 
 \item{verbose}{If \code{TRUE}, prints query progress.
 Defaults to \code{TRUE}.}
+
+\item{tidy}{If \code{TRUE}, makes state names more consistent.
+Defaults to \code{FALSE}.}
 }
 \value{
 A tibble with details of any and all nearby refuge bathrooms.

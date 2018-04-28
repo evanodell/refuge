@@ -5,7 +5,7 @@
 \title{Bathrooms by dates}
 \usage{
 rfg_date(date = NULL, accessible = FALSE, unisex = FALSE,
-  verbose = TRUE)
+  verbose = TRUE, tidy = FALSE)
 }
 \arguments{
 \item{date}{A date in "yyyy-mm-dd" format, or any format that can be
@@ -20,6 +20,9 @@ Defaults to \code{FALSE}.}
 
 \item{verbose}{If \code{TRUE}, prints query progress.
 Defaults to \code{TRUE}.}
+
+\item{tidy}{If \code{TRUE}, makes state names more consistent.
+Defaults to \code{FALSE}.}
 }
 \value{
 A tibble with all bathrooms recorded or updated on or after
