@@ -19,7 +19,7 @@
 
 
 rfg_search <- function(search, accessible = FALSE,
-                       unisex = FALSE, verbose = TRUE) {
+                       unisex = FALSE, verbose = TRUE, tidy = FALSE) {
   if (missing(search)) {
     stop("Values for the `search` parameter must be included", call. = FALSE)
   }
@@ -33,7 +33,7 @@ rfg_search <- function(search, accessible = FALSE,
     ada_query, unisex_query, "&per_page=1"
   )
 
-  df <- query_looper(query, verbose)
+  df <- query_looper(query, verbose, tidy)
 
   df
 }

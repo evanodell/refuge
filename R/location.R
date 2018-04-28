@@ -20,7 +20,7 @@
 #' }
 
 rfg_location <- function(lat, lng, accessible = FALSE,
-                         unisex = FALSE, verbose = TRUE) {
+                         unisex = FALSE, verbose = TRUE, tidy = FALSE) {
   if (missing(lat) || missing(lng)) {
     stop("Values for the `lat` and `lng` parameters must be included.",
       call. = FALSE
@@ -38,7 +38,7 @@ rfg_location <- function(lat, lng, accessible = FALSE,
     unisex_query, "&per_page=1"
   )
 
-  df <- query_looper(query, verbose)
+  df <- query_looper(query, verbose, tidy)
 
   df
 }

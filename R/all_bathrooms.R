@@ -12,6 +12,8 @@
 #' Defaults to \code{FALSE}.
 #' @param verbose If \code{TRUE}, prints query progress.
 #' Defaults to \code{TRUE}.
+#' @param tidy If \code{TRUE}, makes state names more consistent.
+#' Defaults to \code{FALSE}.
 #'
 #' @return A tibble with details on all listed bathrooms.
 #' @export
@@ -23,14 +25,14 @@
 #' }
 
 rfg_all_restrooms <- function(accessible = FALSE, unisex = FALSE,
-                              verbose = TRUE) {
+                              verbose = TRUE, tidy = FALSE) {
   ada_query <- ada_function(accessible)
 
   unisex_query <- unisex_function(unisex)
 
   query <- paste0(base_url, ".json?", ada_query, unisex_query, "&per_page=1")
 
-  df <- query_looper(query, verbose)
+  df <- query_looper(query, verbose, tidy)
 
   df
 }

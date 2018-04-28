@@ -1,6 +1,6 @@
 
 
-query_looper <- function(query, verbose) {
+query_looper <- function(query, verbose, tidy) {
   got <- httr::GET(query, httr::accept_json())
 
   if (httr::status_code(got) != 200) {
@@ -38,6 +38,10 @@ query_looper <- function(query, verbose) {
   }
 
   df <- tibble::as_tibble(dplyr::bind_rows(pages))
+
+  if (tidy == TRUE) {
+    rfg_tidy(df)
+  }
 
   df
 }
