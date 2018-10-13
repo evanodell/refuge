@@ -94,7 +94,7 @@ toronto <- rfg_search("toronto", accessible = TRUE, unisex = TRUE)
 #> Retrieving page 2 of 2
 
 tibble::glimpse(toronto)
-#> Observations: 127
+#> Observations: 140
 #> Variables: 17
 #> $ id             <int> 1656, 20153, 26253, 38754, 19636, 36264, 36582,...
 #> $ name           <chr> "New College, University of Toronto", "Alumni H...
@@ -132,7 +132,7 @@ A BibTeX entry for LaTeX users is
     title = {{refuge}: Locate Trans and Intersex-Friendly Toilets},
     author = {Evan Odell},
     year = {2018},
-    note = {R package version 0.1.0},
+    note = {R package version 0.2.0},
     doi = {10.5281/zenodo.1219900},
     url = {https://github.com/evanodell/refuge},
   }

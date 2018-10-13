@@ -86,7 +86,7 @@ A BibTeX entry for LaTeX users is
     title = {{refuge}: Locate Trans and Intersex-Friendly Toilets},
     author = {Evan Odell},
     year = {2018},
-    note = {R package version 0.1.0},
+    note = {R package version 0.2.0},
     doi = {10.5281/zenodo.1219900},
     url = {https://github.com/evanodell/refuge},
   }
