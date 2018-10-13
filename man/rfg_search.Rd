@@ -22,8 +22,9 @@ Defaults to \code{FALSE}.}
 \item{verbose}{If \code{TRUE}, prints query progress.
 Defaults to \code{TRUE}.}
 
-\item{tidy}{If \code{TRUE}, makes state names more consistent.
-Defaults to \code{FALSE}.}
+\item{tidy}{If \code{TRUE}, makes USA state names more consistent. The internal
+function focuses on correcting known errors and mistakes, if incorrect state
+data is supplied that cannot be corrected. Defaults to \code{FALSE}.}
 }
 \value{
 A tibble with all bathrooms matching your search request

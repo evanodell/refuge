@@ -18,8 +18,9 @@ Defaults to \code{FALSE}.}
 \item{verbose}{If \code{TRUE}, prints query progress.
 Defaults to \code{TRUE}.}
 
-\item{tidy}{If \code{TRUE}, makes state names more consistent.
-Defaults to \code{FALSE}.}
+\item{tidy}{If \code{TRUE}, makes USA state names more consistent. The internal
+function focuses on correcting known errors and mistakes, if incorrect state
+data is supplied that cannot be corrected. Defaults to \code{FALSE}.}
 }
 \value{
 A tibble with details on all listed bathrooms.
@@ -27,6 +28,11 @@ A tibble with details on all listed bathrooms.
 \description{
 All listed refuge restrooms, ordered by date added or last updated, with
 the most recent additions and updates at the top.
+}
+\details{
+Note that the API does not standardise or validate the names of
+states, cities, countries, etc, and so this data may need to be cleaned
+and organised.
 }
 \examples{
 \donttest{

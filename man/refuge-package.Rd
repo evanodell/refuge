@@ -22,7 +22,7 @@ results are returned as tibbles.
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/evanodell/refuge}
+  \item \url{https://docs.evanodell.com/refuge}
   \item Report bugs at \url{https://github.com/evanodell/refuge/issues}
 }
 

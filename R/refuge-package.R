@@ -19,5 +19,5 @@
 #' @importFrom jsonlite fromJSON
 #' @importFrom httr status_code GET
 #' @importFrom tibble as_tibble
-#' @importFrom dplyr bind_rows
+#' @importFrom dplyr bind_rows case_when
 "_PACKAGE"
