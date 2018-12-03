@@ -72,7 +72,7 @@ bathrooms, subject to other parameters." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">refuge</a>
-        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.1.2</span>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.2.0</span>
       </span>
     </div>
 
@@ -152,7 +152,7 @@ bathrooms, subject to other parameters." />
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Bathroom locations</h1>
-    <small class="dont-index">Source: <a href='https://github.com/evanodell/refuge/blob/master/R/location.R'><code>R/location.R</code></a></small>
+    
     <div class="hidden name"><code>rfg_location.Rd</code></div>
     </div>
 
@@ -163,8 +163,8 @@ bathrooms, subject to other parameters.</p>
     
     </div>
 
-    <pre class="usage"><span class='fu'>rfg_location</span>(<span class='no'>lat</span>, <span class='no'>lng</span>, <span class='kw'>accessible</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>unisex</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>verbose</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>,
-  <span class='kw'>tidy</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</pre>
+    <pre class="usage"><span class='fu'>rfg_location</span>(<span class='no'>lat</span>, <span class='no'>lng</span>, <span class='kw'>accessible</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>unisex</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>,
+  <span class='kw'>verbose</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='kw'>tidy</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -195,8 +195,9 @@ Defaults to <code>TRUE</code>.</p></td>
     </tr>
     <tr>
       <th>tidy</th>
-      <td><p>If <code>TRUE</code>, makes state names more consistent.
-Defaults to <code>FALSE</code>.</p></td>
+      <td><p>If <code>TRUE</code>, makes USA state names more consistent. The internal
+function focuses on correcting known errors and mistakes, if incorrect state
+data is supplied that cannot be corrected. Defaults to <code>FALSE</code>.</p></td>
     </tr>
     </table>
     

@@ -2,7 +2,7 @@
 
 ada_function <- function(accessible) {
   if (accessible == TRUE) {
-    "&ada=TRUE"
+    "ada=true&"
   } else {
     ""
   }

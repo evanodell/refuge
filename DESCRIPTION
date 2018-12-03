@@ -1,5 +1,5 @@
 Package: refuge
-Version: 0.2.0
+Version: 0.2.0.9999
 Title: Locate Trans and Intersex-Friendly Toilets
 Description: Access the 'Refuge' API, a web-application for locating trans and 
     intersex-friendly restrooms, including unisex and accessible restrooms. 
@@ -19,7 +19,7 @@ Imports:
     tibble,
     dplyr,
     httr
-RoxygenNote: 6.1.0
+RoxygenNote: 6.1.1
 URL: https://docs.evanodell.com/refuge
 BugReports: https://github.com/evanodell/refuge/issues
 Suggests: 

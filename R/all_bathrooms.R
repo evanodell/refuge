@@ -35,7 +35,7 @@ rfg_all_restrooms <- function(accessible = FALSE, unisex = FALSE,
 
   unisex_query <- unisex_function(unisex)
 
-  query <- paste0(base_url, ".json?", ada_query, unisex_query, "&per_page=1")
+  query <- paste0(base_url, ".json?", ada_query, unisex_query, "per_page=1")
 
   df <- query_looper(query, verbose, tidy)
 

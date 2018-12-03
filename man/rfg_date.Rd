@@ -5,7 +5,7 @@
 \title{Bathrooms by dates}
 \usage{
 rfg_date(date = NULL, accessible = FALSE, unisex = FALSE,
-  verbose = TRUE, tidy = FALSE)
+  updated = FALSE, verbose = TRUE, tidy = FALSE)
 }
 \arguments{
 \item{date}{A date in "yyyy-mm-dd" format, or any format that can be
@@ -17,6 +17,10 @@ Defaults to \code{FALSE}.}
 
 \item{unisex}{If \code{TRUE}, only returns unisex restrooms.
 Defaults to \code{FALSE}.}
+
+\item{updated}{If \code{TRUE}, returns all bathrooms updated \emph{or} added
+since the given date. Defaults to \code{FALSE}, which only returns bathrooms
+added since the given date.}
 
 \item{verbose}{If \code{TRUE}, prints query progress.
 Defaults to \code{TRUE}.}

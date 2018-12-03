@@ -1,4 +1,10 @@
 
+# refuge 0.2.0.999
+
+* Added `updated` parameter to `rfg_date`. Please check your code as this may
+break existing workflows.
+
+
 # refuge 0.2.0
 
 * Improved internal function called by the optional `tidy` parameter so 
