@@ -1,8 +1,7 @@
 
-# refuge 0.3.1
+# refuge 0.3.2
 
 * Fixed errors in `rfg_search` function.
-
 
 # refuge 0.3.0
 

@@ -4,7 +4,7 @@
 This is a resubmission of the `refuge` package, to correct a bug found 
 immediately after the release of 0.3.0 to CRAN.
 
-This is version 0.3.1, which fixes that bug, caused by a missing "&" sign in
+This is version 0.3.2, which fixes that bug, caused by a missing "&" sign in
 the `rfg_search` function. Have implemented better testing to catch it
 
 ## Test environments

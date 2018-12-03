@@ -126,7 +126,7 @@ For more detailed examples, check out the
 
 Odell E (2018). *refuge: Locate Trans and Intersex-Friendly Toilets*.
 doi: 10.5281/zenodo.1219900 (URL:
-<http://doi.org/10.5281/zenodo.1219900>), R package version 0.3.1,
+<http://doi.org/10.5281/zenodo.1219900>), R package version 0.3.2,
 \<URL: <https://github.com/evanodell/refuge>\>.
 
 A BibTeX entry for LaTeX users is
@@ -136,7 +136,7 @@ A BibTeX entry for LaTeX users is
     title = {{refuge}: Locate Trans and Intersex-Friendly Toilets},
     author = {Evan Odell},
     year = {2018},
-    note = {R package version 0.3.1},
+    note = {R package version 0.3.2},
     doi = {10.5281/zenodo.1219900},
     url = {https://github.com/evanodell/refuge},
   }
