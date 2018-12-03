@@ -1,11 +1,10 @@
 
 ## Submission Notes
 
-This is a resubmission of the `refuge` package, to correct problems with 
-CRAN check caused by a vignette depedency being archived. 
-This is version 0.2.0, which fixes the vignette errors and features slight
-improvements to documentation and some internal functions.
-The package is for accessing the Refuge Restrooms API.
+This is a resubmission of the `refuge` package, to correct test errors found on
+CRAN.
+This is version 0.3.0, which fixes those errors and features some internal code
+improvements and additions to the `rfg_date` function.
 
 ## Test environments
 * local macOS install, R 3.5.1
