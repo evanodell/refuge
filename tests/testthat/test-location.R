@@ -9,8 +9,10 @@ test_that("location works", {
   expect_gte(nrow(c), 5)
 
 
-  e <- rfg_location(lat = 39, lng = -75, accessible = FALSE,
-                    unisex = FALSE, tidy = TRUE)
+  e <- rfg_location(
+    lat = 39, lng = -75, accessible = FALSE,
+    unisex = FALSE, tidy = TRUE
+  )
   expect_gte(nrow(e), nrow(c))
 
 
