@@ -35,7 +35,7 @@ Restroom record search
 \examples{
 \donttest{
 
-s <- rfg_search(search="toronto")
-
+s <- rfg_search(search = "toronto")
 }
+
 }

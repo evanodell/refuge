@@ -41,6 +41,6 @@ given date.
 \donttest{
 
 q <- rfg_date("2017-11-04")
-
 }
+
 }

@@ -16,12 +16,12 @@
 #' the given date.
 #' @export
 #'
-#' @examples \donttest{
-#'
+#' @examples
+#' \donttest{
+#' 
 #' q <- rfg_date("2017-11-04")
-#'
 #' }
-
+#' 
 rfg_date <- function(date = NULL, accessible = FALSE, unisex = FALSE,
                      updated = FALSE, verbose = TRUE, tidy = FALSE) {
   if (is.null(date)) stop("Please enter a date", call. = FALSE)
@@ -32,7 +32,7 @@ rfg_date <- function(date = NULL, accessible = FALSE, unisex = FALSE,
 
   unisex_query <- unisex_function(unisex)
 
-  updated_query <- ifelse(updated==TRUE, "updated=true&", "")
+  updated_query <- ifelse(updated == TRUE, "updated=true&", "")
 
   query <- paste0(
     base_url, "/by_date.json?", ada_query, unisex_query, updated_query,

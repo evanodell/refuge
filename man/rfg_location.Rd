@@ -36,7 +36,7 @@ bathrooms, subject to other parameters.
 \examples{
 \donttest{
 
-c <- rfg_location(lat=39, lng=-75)
-
+c <- rfg_location(lat = 39, lng = -75)
 }
+
 }
