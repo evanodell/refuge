@@ -13,10 +13,10 @@
 #'
 #' @examples
 #' \donttest{
-#' 
+#'
 #' s <- rfg_search(search = "toronto")
 #' }
-#' 
+#'
 rfg_search <- function(search, accessible = FALSE,
                        unisex = FALSE, verbose = TRUE, tidy = FALSE) {
   if (missing(search)) {
@@ -28,7 +28,7 @@ rfg_search <- function(search, accessible = FALSE,
   unisex_query <- unisex_function(unisex)
 
   query <- paste0(
-    base_url, "/search.json?query=", search,
+    base_url, "/search.json?query=", search, "&",
     ada_query, unisex_query, "&per_page=1"
   )
 

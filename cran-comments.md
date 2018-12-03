@@ -1,10 +1,11 @@
 
 ## Submission Notes
 
-This is a resubmission of the `refuge` package, to correct test errors found on
-CRAN.
-This is version 0.3.0, which fixes those errors and features some internal code
-improvements and additions to the `rfg_date` function.
+This is a resubmission of the `refuge` package, to correct a bug found 
+immediately after the release of 0.3.0 to CRAN.
+
+This is version 0.3.1, which fixes that bug, caused by a missing "&" sign in
+the `rfg_search` function. Have implemented better testing to catch it
 
 ## Test environments
 * local macOS install, R 3.5.1
