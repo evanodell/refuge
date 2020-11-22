@@ -29,7 +29,7 @@
 </script>
 </head>
 <body>
-    <div class="container template-home">
+    <div class="container template-article">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
@@ -90,6 +90,12 @@
       <a href="http://docs.evanodell.com/refuge">refuge</a>
     </li>
     <li>
+      <a href="http://docs.evanodell.com/guardianapi">guardianapi</a>
+    </li>
+    <li>
+      <a href="http://docs.evanodell.com/ukpolice">ukpolice</a>
+    </li>
+    <li>
       <a href="http://docs.evanodell.com/emisc">emisc</a>
     </li>
   </ul>
@@ -118,7 +124,11 @@
 
       
       </header><div class="row">
-  <div class="contents col-md-9">
+  <div class="col-md-9 contents">
+    
+
+    
+    
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 <div id="refuge" class="section level1">
@@ -145,58 +155,58 @@
 <a class="sourceLine" id="cb3-3" title="3">bathrooms &lt;-<span class="st"> </span><span class="kw"><a href="reference/rfg_location.html">rfg_location</a></span>(<span class="dt">lat=</span><span class="dv">39</span>, <span class="dt">lng=</span><span class="op">-</span><span class="dv">75</span>)</a>
 <a class="sourceLine" id="cb3-4" title="4"><span class="co">#&gt; Retrieving page 1 of 1</span></a>
 <a class="sourceLine" id="cb3-5" title="5"></a>
-<a class="sourceLine" id="cb3-6" title="6">tibble<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/tibble/topics/glimpse">glimpse</a></span>(bathrooms)</a>
+<a class="sourceLine" id="cb3-6" title="6">tibble<span class="op">::</span><span class="kw"><a href="https://tibble.tidyverse.org/reference/glimpse.html">glimpse</a></span>(bathrooms)</a>
 <a class="sourceLine" id="cb3-7" title="7"><span class="co">#&gt; Observations: 11</span></a>
 <a class="sourceLine" id="cb3-8" title="8"><span class="co">#&gt; Variables: 21</span></a>
-<a class="sourceLine" id="cb3-9" title="9"><span class="co">#&gt; $ id             &lt;int&gt; 23292, 18468, 35541, 31275, 36036, 36048, 23588...</span></a>
-<a class="sourceLine" id="cb3-10" title="10"><span class="co">#&gt; $ name           &lt;chr&gt; "Acme", "Dellas 5 &amp; 10", "Harry's Ocean Bar and...</span></a>
-<a class="sourceLine" id="cb3-11" title="11"><span class="co">#&gt; $ street         &lt;chr&gt; "3845 Bayshore Road", "503 Washington St", "102...</span></a>
-<a class="sourceLine" id="cb3-12" title="12"><span class="co">#&gt; $ city           &lt;chr&gt; "North Cape May", "Cape May", "Cape May", "Rio ...</span></a>
-<a class="sourceLine" id="cb3-13" title="13"><span class="co">#&gt; $ state          &lt;chr&gt; "NJ", "New Jersey", "NJ", "Nj", "New Jersey", "...</span></a>
-<a class="sourceLine" id="cb3-14" title="14"><span class="co">#&gt; $ accessible     &lt;lgl&gt; TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE,...</span></a>
-<a class="sourceLine" id="cb3-15" title="15"><span class="co">#&gt; $ unisex         &lt;lgl&gt; TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE,...</span></a>
-<a class="sourceLine" id="cb3-16" title="16"><span class="co">#&gt; $ directions     &lt;chr&gt; "At the back of the store, between the butter /...</span></a>
-<a class="sourceLine" id="cb3-17" title="17"><span class="co">#&gt; $ comment        &lt;chr&gt; "You don't have to be a paying customer. There ...</span></a>
-<a class="sourceLine" id="cb3-18" title="18"><span class="co">#&gt; $ latitude       &lt;dbl&gt; 38.97527, 38.93303, 38.93174, 39.01546, 38.9901...</span></a>
-<a class="sourceLine" id="cb3-19" title="19"><span class="co">#&gt; $ longitude      &lt;dbl&gt; -74.94259, -74.92252, -74.91153, -74.87687, -74...</span></a>
-<a class="sourceLine" id="cb3-20" title="20"><span class="co">#&gt; $ created_at     &lt;chr&gt; "2016-06-17T03:28:13.497Z", "2015-08-24T01:01:2...</span></a>
-<a class="sourceLine" id="cb3-21" title="21"><span class="co">#&gt; $ updated_at     &lt;chr&gt; "2016-06-17T03:28:13.497Z", "2015-08-24T01:01:2...</span></a>
+<a class="sourceLine" id="cb3-9" title="9"><span class="co">#&gt; $ id             &lt;int&gt; 23292, 18468, 35541, 31275, 36036, 36048, 23588, …</span></a>
+<a class="sourceLine" id="cb3-10" title="10"><span class="co">#&gt; $ name           &lt;chr&gt; "Acme", "Dellas 5 &amp; 10", "Harry's Ocean Bar and G…</span></a>
+<a class="sourceLine" id="cb3-11" title="11"><span class="co">#&gt; $ street         &lt;chr&gt; "3845 Bayshore Road", "503 Washington St", "1025 …</span></a>
+<a class="sourceLine" id="cb3-12" title="12"><span class="co">#&gt; $ city           &lt;chr&gt; "North Cape May", "Cape May", "Cape May", "Rio Gr…</span></a>
+<a class="sourceLine" id="cb3-13" title="13"><span class="co">#&gt; $ state          &lt;chr&gt; "NJ", "New Jersey", "NJ", "Nj", "New Jersey", "Ne…</span></a>
+<a class="sourceLine" id="cb3-14" title="14"><span class="co">#&gt; $ accessible     &lt;lgl&gt; TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, T…</span></a>
+<a class="sourceLine" id="cb3-15" title="15"><span class="co">#&gt; $ unisex         &lt;lgl&gt; TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, T…</span></a>
+<a class="sourceLine" id="cb3-16" title="16"><span class="co">#&gt; $ directions     &lt;chr&gt; "At the back of the store, between the butter / d…</span></a>
+<a class="sourceLine" id="cb3-17" title="17"><span class="co">#&gt; $ comment        &lt;chr&gt; "You don't have to be a paying customer. There ar…</span></a>
+<a class="sourceLine" id="cb3-18" title="18"><span class="co">#&gt; $ latitude       &lt;dbl&gt; 38.97527, 38.93303, 38.93174, 39.01546, 38.99014,…</span></a>
+<a class="sourceLine" id="cb3-19" title="19"><span class="co">#&gt; $ longitude      &lt;dbl&gt; -74.94259, -74.92252, -74.91153, -74.87687, -74.8…</span></a>
+<a class="sourceLine" id="cb3-20" title="20"><span class="co">#&gt; $ created_at     &lt;chr&gt; "2016-06-17T03:28:13.497Z", "2015-08-24T01:01:21.…</span></a>
+<a class="sourceLine" id="cb3-21" title="21"><span class="co">#&gt; $ updated_at     &lt;chr&gt; "2016-06-17T03:28:13.497Z", "2015-08-24T01:01:21.…</span></a>
 <a class="sourceLine" id="cb3-22" title="22"><span class="co">#&gt; $ downvote       &lt;int&gt; 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0</span></a>
 <a class="sourceLine" id="cb3-23" title="23"><span class="co">#&gt; $ upvote         &lt;int&gt; 0, 1, 1, 0, 1, 2, 0, 0, 1, 0, 2</span></a>
-<a class="sourceLine" id="cb3-24" title="24"><span class="co">#&gt; $ country        &lt;chr&gt; "US", "US", "US", "US", "US", "US", "US", "US",...</span></a>
-<a class="sourceLine" id="cb3-25" title="25"><span class="co">#&gt; $ changing_table &lt;lgl&gt; FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE,...</span></a>
-<a class="sourceLine" id="cb3-26" title="26"><span class="co">#&gt; $ edit_id        &lt;int&gt; 23292, 18468, 35541, 31275, 36036, 36048, 23588...</span></a>
-<a class="sourceLine" id="cb3-27" title="27"><span class="co">#&gt; $ approved       &lt;lgl&gt; TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE,...</span></a>
-<a class="sourceLine" id="cb3-28" title="28"><span class="co">#&gt; $ distance       &lt;dbl&gt; 3.525190, 6.223601, 6.696027, 6.696431, 10.0393...</span></a>
-<a class="sourceLine" id="cb3-29" title="29"><span class="co">#&gt; $ bearing        &lt;chr&gt; "113.306001647996", "130.839725640655", "127.65...</span></a></code></pre></div>
+<a class="sourceLine" id="cb3-24" title="24"><span class="co">#&gt; $ country        &lt;chr&gt; "US", "US", "US", "US", "US", "US", "US", "US", "…</span></a>
+<a class="sourceLine" id="cb3-25" title="25"><span class="co">#&gt; $ changing_table &lt;lgl&gt; FALSE, FALSE, TRUE, FALSE, FALSE, FALSE, FALSE, F…</span></a>
+<a class="sourceLine" id="cb3-26" title="26"><span class="co">#&gt; $ edit_id        &lt;int&gt; 23292, 18468, 35541, 31275, 36036, 36048, 23588, …</span></a>
+<a class="sourceLine" id="cb3-27" title="27"><span class="co">#&gt; $ approved       &lt;lgl&gt; TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, T…</span></a>
+<a class="sourceLine" id="cb3-28" title="28"><span class="co">#&gt; $ distance       &lt;dbl&gt; 3.525190, 6.223601, 6.696027, 6.696431, 10.039325…</span></a>
+<a class="sourceLine" id="cb3-29" title="29"><span class="co">#&gt; $ bearing        &lt;chr&gt; "113.306001647996", "130.839725640655", "127.6522…</span></a></code></pre></div>
 <p>Locating all unisex, accessible restrooms in Toronto, using the <code><a href="reference/rfg_search.html">rfg_search()</a></code> function.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" title="1"></a>
 <a class="sourceLine" id="cb4-2" title="2">toronto &lt;-<span class="st"> </span><span class="kw"><a href="reference/rfg_search.html">rfg_search</a></span>(<span class="st">"toronto"</span>, <span class="dt">accessible =</span> <span class="ot">TRUE</span>, <span class="dt">unisex =</span> <span class="ot">TRUE</span>)</a>
 <a class="sourceLine" id="cb4-3" title="3"><span class="co">#&gt; Retrieving page 1 of 2</span></a>
 <a class="sourceLine" id="cb4-4" title="4"><span class="co">#&gt; Retrieving page 2 of 2</span></a>
 <a class="sourceLine" id="cb4-5" title="5"></a>
-<a class="sourceLine" id="cb4-6" title="6">tibble<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/tibble/topics/glimpse">glimpse</a></span>(toronto)</a>
-<a class="sourceLine" id="cb4-7" title="7"><span class="co">#&gt; Observations: 141</span></a>
+<a class="sourceLine" id="cb4-6" title="6">tibble<span class="op">::</span><span class="kw"><a href="https://tibble.tidyverse.org/reference/glimpse.html">glimpse</a></span>(toronto)</a>
+<a class="sourceLine" id="cb4-7" title="7"><span class="co">#&gt; Observations: 160</span></a>
 <a class="sourceLine" id="cb4-8" title="8"><span class="co">#&gt; Variables: 19</span></a>
-<a class="sourceLine" id="cb4-9" title="9"><span class="co">#&gt; $ id             &lt;int&gt; 1656, 20153, 26253, 38754, 19636, 36264, 36582,...</span></a>
-<a class="sourceLine" id="cb4-10" title="10"><span class="co">#&gt; $ name           &lt;chr&gt; "New College, University of Toronto", "Alumni H...</span></a>
-<a class="sourceLine" id="cb4-11" title="11"><span class="co">#&gt; $ street         &lt;chr&gt; "40 Wilcocks", "121 St. Joseph Street, M5S 1J4"...</span></a>
-<a class="sourceLine" id="cb4-12" title="12"><span class="co">#&gt; $ city           &lt;chr&gt; "Toronto", "Toronto", "Toronto", "Toronto", "Mi...</span></a>
-<a class="sourceLine" id="cb4-13" title="13"><span class="co">#&gt; $ state          &lt;chr&gt; "ON", "Ontario", "Ontario", "Ontario", "Ontario...</span></a>
-<a class="sourceLine" id="cb4-14" title="14"><span class="co">#&gt; $ accessible     &lt;lgl&gt; TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE,...</span></a>
-<a class="sourceLine" id="cb4-15" title="15"><span class="co">#&gt; $ unisex         &lt;lgl&gt; TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE,...</span></a>
-<a class="sourceLine" id="cb4-16" title="16"><span class="co">#&gt; $ directions     &lt;chr&gt; "Go in the entrance as though you wanted to go ...</span></a>
-<a class="sourceLine" id="cb4-17" title="17"><span class="co">#&gt; $ comment        &lt;chr&gt; "Door is open until the library closes. I think...</span></a>
-<a class="sourceLine" id="cb4-18" title="18"><span class="co">#&gt; $ latitude       &lt;dbl&gt; 43.66162, 43.66499, 43.65976, 43.70860, 43.6850...</span></a>
-<a class="sourceLine" id="cb4-19" title="19"><span class="co">#&gt; $ longitude      &lt;dbl&gt; -79.40040, -79.39033, -79.36334, -79.40075, -79...</span></a>
-<a class="sourceLine" id="cb4-20" title="20"><span class="co">#&gt; $ created_at     &lt;chr&gt; "2014-02-02T20:51:23.312Z", "2016-02-02T08:16:2...</span></a>
-<a class="sourceLine" id="cb4-21" title="21"><span class="co">#&gt; $ updated_at     &lt;chr&gt; "2014-02-02T20:51:23.312Z", "2016-02-02T08:16:2...</span></a>
-<a class="sourceLine" id="cb4-22" title="22"><span class="co">#&gt; $ downvote       &lt;int&gt; 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 2, 1, 1, 1, 1, 1,...</span></a>
-<a class="sourceLine" id="cb4-23" title="23"><span class="co">#&gt; $ upvote         &lt;int&gt; 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 3, 0, 0, 0, 1, 1,...</span></a>
-<a class="sourceLine" id="cb4-24" title="24"><span class="co">#&gt; $ country        &lt;chr&gt; "CA", "CA", "CA", "CA", "CA", "CA", "CA", "Cana...</span></a>
-<a class="sourceLine" id="cb4-25" title="25"><span class="co">#&gt; $ changing_table &lt;lgl&gt; FALSE, FALSE, FALSE, FALSE, FALSE, TRUE, FALSE,...</span></a>
-<a class="sourceLine" id="cb4-26" title="26"><span class="co">#&gt; $ edit_id        &lt;int&gt; 1656, 20153, 26253, 38754, 19636, 36264, 36582,...</span></a>
-<a class="sourceLine" id="cb4-27" title="27"><span class="co">#&gt; $ approved       &lt;lgl&gt; TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE,...</span></a></code></pre></div>
+<a class="sourceLine" id="cb4-9" title="9"><span class="co">#&gt; $ id             &lt;int&gt; 1656, 20153, 26253, 38754, 46678, 19636, 36264, 4…</span></a>
+<a class="sourceLine" id="cb4-10" title="10"><span class="co">#&gt; $ name           &lt;chr&gt; "New College, University of Toronto", "Alumni Hal…</span></a>
+<a class="sourceLine" id="cb4-11" title="11"><span class="co">#&gt; $ street         &lt;chr&gt; "40 Wilcocks", "121 St. Joseph Street, M5S 1J4", …</span></a>
+<a class="sourceLine" id="cb4-12" title="12"><span class="co">#&gt; $ city           &lt;chr&gt; "Toronto", "Toronto", "Toronto", "Toronto", "Toro…</span></a>
+<a class="sourceLine" id="cb4-13" title="13"><span class="co">#&gt; $ state          &lt;chr&gt; "ON", "Ontario", "Ontario", "Ontario", "Ontario",…</span></a>
+<a class="sourceLine" id="cb4-14" title="14"><span class="co">#&gt; $ accessible     &lt;lgl&gt; TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, T…</span></a>
+<a class="sourceLine" id="cb4-15" title="15"><span class="co">#&gt; $ unisex         &lt;lgl&gt; TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, T…</span></a>
+<a class="sourceLine" id="cb4-16" title="16"><span class="co">#&gt; $ directions     &lt;chr&gt; "Go in the entrance as though you wanted to go to…</span></a>
+<a class="sourceLine" id="cb4-17" title="17"><span class="co">#&gt; $ comment        &lt;chr&gt; "Door is open until the library closes. I think a…</span></a>
+<a class="sourceLine" id="cb4-18" title="18"><span class="co">#&gt; $ latitude       &lt;dbl&gt; 43.66162, 43.66499, 43.65976, 43.70860, 43.63918,…</span></a>
+<a class="sourceLine" id="cb4-19" title="19"><span class="co">#&gt; $ longitude      &lt;dbl&gt; -79.40040, -79.39033, -79.36334, -79.40075, -79.4…</span></a>
+<a class="sourceLine" id="cb4-20" title="20"><span class="co">#&gt; $ created_at     &lt;chr&gt; "2014-02-02T20:51:23.312Z", "2016-02-02T08:16:28.…</span></a>
+<a class="sourceLine" id="cb4-21" title="21"><span class="co">#&gt; $ updated_at     &lt;chr&gt; "2014-02-02T20:51:23.312Z", "2016-02-02T08:16:28.…</span></a>
+<a class="sourceLine" id="cb4-22" title="22"><span class="co">#&gt; $ downvote       &lt;int&gt; 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 2, 1, 1, 1, 1, 1…</span></a>
+<a class="sourceLine" id="cb4-23" title="23"><span class="co">#&gt; $ upvote         &lt;int&gt; 2, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 3, 0, 0, 0, 1, 1…</span></a>
+<a class="sourceLine" id="cb4-24" title="24"><span class="co">#&gt; $ country        &lt;chr&gt; "CA", "CA", "CA", "CA", "CA", "CA", "CA", "CA", "…</span></a>
+<a class="sourceLine" id="cb4-25" title="25"><span class="co">#&gt; $ changing_table &lt;lgl&gt; FALSE, FALSE, FALSE, FALSE, TRUE, FALSE, TRUE, FA…</span></a>
+<a class="sourceLine" id="cb4-26" title="26"><span class="co">#&gt; $ edit_id        &lt;int&gt; 1656, 20153, 26253, 38754, 46678, 19636, 36264, 3…</span></a>
+<a class="sourceLine" id="cb4-27" title="27"><span class="co">#&gt; $ approved       &lt;lgl&gt; TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, T…</span></a></code></pre></div>
 <p>For more detailed examples, check out the <a href="https://docs.evanodell.com/refuge/articles/introduction.html">vignette</a>.</p>
 </div>
 <div id="citing-refuge" class="section level2">
@@ -223,7 +233,7 @@
 </div>
   </div>
 
-  <div class="col-md-3" id="sidebar">
+  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <div class="links">
 <h2>Links</h2>
 <ul class="list-unstyled">
@@ -254,7 +264,7 @@
 </ul>
 </div>
 
-  <div class="dev-status">
+      <div class="dev-status">
 <h2>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a></li>
@@ -268,6 +278,7 @@
 </ul>
 </div>
 </div>
+
 </div>
 
 
@@ -276,7 +287,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.2.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.3.0.</p>
 </div>
       </footer>
 </div>

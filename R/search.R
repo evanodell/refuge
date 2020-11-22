@@ -12,11 +12,10 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
-#' 
+#' \dontrun{
 #' s <- rfg_search(search = "toronto")
 #' }
-#' 
+
 rfg_search <- function(search, accessible = FALSE,
                        unisex = FALSE, verbose = TRUE, tidy = FALSE) {
   if (missing(search)) {

@@ -14,11 +14,10 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
-#' 
+#' \dontrun{
 #' c <- rfg_location(lat = 39, lng = -75)
 #' }
-#' 
+#'
 rfg_location <- function(lat, lng, accessible = FALSE,
                          unisex = FALSE, verbose = TRUE, tidy = FALSE) {
   if (missing(lat) || missing(lng)) {

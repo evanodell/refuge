@@ -34,8 +34,7 @@ Given a pair of coordinates (latitude and longitude), finds any nearby
 bathrooms, subject to other parameters.
 }
 \examples{
-\donttest{
-
+\dontrun{
 c <- rfg_location(lat = 39, lng = -75)
 }
 

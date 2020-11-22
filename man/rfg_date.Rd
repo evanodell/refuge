@@ -38,9 +38,7 @@ Requests all records on bathrooms created or updated on or after a
 given date.
 }
 \examples{
-\donttest{
-
+\dontrun{
 q <- rfg_date("2017-11-04")
 }
-
 }

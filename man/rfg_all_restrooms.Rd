@@ -35,9 +35,7 @@ states, cities, countries, etc, and so this data may need to be cleaned
 and organised.
 }
 \examples{
-\donttest{
-
+\dontrun{
 a <- rfg_all_restrooms(accessible = TRUE, unisex = TRUE)
 }
-
 }

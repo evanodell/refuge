@@ -13,16 +13,18 @@ knitr::opts_chunk$set(
 )
 ```
 
+# refuge
+
+<!-- badges: start -->
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/refuge)](https://cran.r-project.org/package=refuge)
 [![GitHub tag](https://img.shields.io/github/tag/evanodell/refuge.svg)](https://github.com/evanodell/refuge)
 [![](https://cranlogs.r-pkg.org/badges/grand-total/refuge)](https://dgrtwo.shinyapps.io/cranview/)
-[![Travis build status](https://travis-ci.org/evanodell/refuge.svg?branch=master)](https://travis-ci.org/evanodell/refuge)
+[![R build status](https://github.com/evanodell/refuge/workflows/R-CMD-check/badge.svg)](https://github.com/evanodell/refuge/actions)
 [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/evanodell/refuge?branch=master&svg=true)](https://ci.appveyor.com/project/evanodell/refuge)
 [![Coverage status](https://codecov.io/gh/evanodell/refuge/branch/master/graph/badge.svg)](https://codecov.io/github/evanodell/refuge?branch=master)
 [![DOI](https://zenodo.org/badge/129826417.svg)](https://zenodo.org/badge/latestdoi/129826417)
-
-# refuge
+<!-- badges: end -->
 
 The `refuge` package provides access to the [Refuge Restrooms API](https://www.refugerestrooms.org/api/docs/#!/restrooms) in R.
 

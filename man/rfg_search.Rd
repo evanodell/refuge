@@ -33,9 +33,7 @@ A tibble with all bathrooms matching your search request
 Restroom record search
 }
 \examples{
-\donttest{
-
+\dontrun{
 s <- rfg_search(search = "toronto")
 }
-
 }
