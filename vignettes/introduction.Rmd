@@ -1,5 +1,5 @@
 ---
-title: "Introduction"
+title: "Introduction to `refuge`"
 author: "Evan Odell"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
