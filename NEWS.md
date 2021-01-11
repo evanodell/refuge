@@ -1,4 +1,11 @@
 
+# refuge 0.3.3
+
+* Removed dependencies from vignette.
+
+* Some minor internal improvements.
+
+
 # refuge 0.3.2
 
 * Fixed errors in `rfg_search` function.
