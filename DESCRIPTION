@@ -1,5 +1,5 @@
 Package: refuge
-Version: 0.3.2
+Version: 0.3.2.9000
 Title: Locate Trans and Intersex-Friendly Toilets
 Description: Access the 'Refuge' API, a web-application for locating trans and 
     intersex-friendly restrooms, including unisex and accessible restrooms. 
@@ -26,12 +26,6 @@ Suggests:
     covr,
     testthat,
     knitr,
-    rmarkdown,
-    ggplot2,
-    magrittr,
-    viridis,
-    scales,
-    usmap,
-    stringi
+    rmarkdown
 VignetteBuilder: knitr
 Roxygen: list(markdown = TRUE)
