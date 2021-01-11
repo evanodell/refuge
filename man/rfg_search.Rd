@@ -4,8 +4,13 @@
 \alias{rfg_search}
 \title{Restroom record search}
 \usage{
-rfg_search(search, accessible = FALSE, unisex = FALSE,
-  verbose = TRUE, tidy = FALSE)
+rfg_search(
+  search,
+  accessible = FALSE,
+  unisex = FALSE,
+  verbose = TRUE,
+  tidy = FALSE
+)
 }
 \arguments{
 \item{search}{A string to search for. Note that the API does not accept

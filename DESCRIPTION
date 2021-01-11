@@ -19,7 +19,7 @@ Imports:
     tibble,
     dplyr,
     httr
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.1
 URL: https://docs.evanodell.com/refuge
 BugReports: https://github.com/evanodell/refuge/issues
 Suggests: 

@@ -4,8 +4,12 @@
 \alias{rfg_all_restrooms}
 \title{All refuge restrooms}
 \usage{
-rfg_all_restrooms(accessible = FALSE, unisex = FALSE, verbose = TRUE,
-  tidy = FALSE)
+rfg_all_restrooms(
+  accessible = FALSE,
+  unisex = FALSE,
+  verbose = TRUE,
+  tidy = FALSE
+)
 }
 \arguments{
 \item{accessible}{If \code{TRUE}, only returns restrooms that meet the

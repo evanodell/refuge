@@ -5,5 +5,5 @@ test_that("all restrooms works", {
   skip_on_ci()
 
   all <- rfg_all_restrooms(accessible = TRUE, unisex = TRUE)
-  expect_true(tibble::is.tibble(all))
+  expect_true(tibble::is_tibble(all))
 })

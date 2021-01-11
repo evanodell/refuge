@@ -22,13 +22,11 @@ rfg_search <- function(search, accessible = FALSE,
     stop("Values for the `search` parameter must be included", call. = FALSE)
   }
 
-  ada_query <- ada_function(accessible)
-
-  unisex_query <- unisex_function(unisex)
+  ada_uni <- ada_uni_function(accessible, unisex)
 
   query <- paste0(
-    base_url, "/search.json?query=", search, "&",
-    ada_query, unisex_query, "&per_page=1"
+    base_url, "/search.json?query=", search,
+    ada_uni, "&per_page=1"
   )
 
   df <- query_looper(query, verbose, tidy)

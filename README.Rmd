@@ -23,7 +23,8 @@ knitr::opts_chunk$set(
 [![R build status](https://github.com/evanodell/refuge/workflows/R-CMD-check/badge.svg)](https://github.com/evanodell/refuge/actions)
 [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/evanodell/refuge?branch=master&svg=true)](https://ci.appveyor.com/project/evanodell/refuge)
 [![Coverage status](https://codecov.io/gh/evanodell/refuge/branch/master/graph/badge.svg)](https://codecov.io/github/evanodell/refuge?branch=master)
-[![DOI](https://zenodo.org/badge/129826417.svg)](https://zenodo.org/badge/latestdoi/129826417)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1219900.svg)](https://doi.org/10.5281/zenodo.1219900)
+
 <!-- badges: end -->
 
 The `refuge` package provides access to the [Refuge Restrooms API](https://www.refugerestrooms.org/api/docs/#!/restrooms) in R.
@@ -79,7 +80,7 @@ For more detailed examples, check out the [vignette](https://docs.evanodell.com/
 
 Odell E (2018). _refuge: Locate Trans and Intersex-Friendly Toilets_. doi:
 10.5281/zenodo.1219900 (URL: http://doi.org/10.5281/zenodo.1219900), R package version
-0.3.2, <URL: https://github.com/evanodell/refuge>.
+`r packageVersion("refuge")`, <URL: https://github.com/evanodell/refuge>.
 
 A BibTeX entry for LaTeX users is
 
@@ -88,7 +89,7 @@ A BibTeX entry for LaTeX users is
     title = {{refuge}: Locate Trans and Intersex-Friendly Toilets},
     author = {Evan Odell},
     year = {2018},
-    note = {R package version 0.3.2},
+    note = {R package version `r packageVersion("refuge")`},
     doi = {10.5281/zenodo.1219900},
     url = {https://github.com/evanodell/refuge},
   }

@@ -17,7 +17,8 @@ status](https://github.com/evanodell/refuge/workflows/R-CMD-check/badge.svg)](ht
 status](https://ci.appveyor.com/api/projects/status/github/evanodell/refuge?branch=master&svg=true)](https://ci.appveyor.com/project/evanodell/refuge)
 [![Coverage
 status](https://codecov.io/gh/evanodell/refuge/branch/master/graph/badge.svg)](https://codecov.io/github/evanodell/refuge?branch=master)
-[![DOI](https://zenodo.org/badge/129826417.svg)](https://zenodo.org/badge/latestdoi/129826417)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1219900.svg)](https://doi.org/10.5281/zenodo.1219900)
+
 <!-- badges: end -->
 
 The `refuge` package provides access to the [Refuge Restrooms

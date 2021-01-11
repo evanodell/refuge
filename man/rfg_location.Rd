@@ -4,8 +4,14 @@
 \alias{rfg_location}
 \title{Bathroom locations}
 \usage{
-rfg_location(lat, lng, accessible = FALSE, unisex = FALSE,
-  verbose = TRUE, tidy = FALSE)
+rfg_location(
+  lat,
+  lng,
+  accessible = FALSE,
+  unisex = FALSE,
+  verbose = TRUE,
+  tidy = FALSE
+)
 }
 \arguments{
 \item{lat}{Location latitude}

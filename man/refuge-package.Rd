@@ -28,7 +28,7 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Evan Odell \email{evanodell91@gmail.com} (0000-0003-1845-808X)
+\strong{Maintainer}: Evan Odell \email{evanodell91@gmail.com} (\href{https://orcid.org/0000-0003-1845-808X}{ORCID})
 
 }
 \keyword{internal}
