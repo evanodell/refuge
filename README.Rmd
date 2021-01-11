@@ -48,39 +48,28 @@ You can install the latest development version from [GitHub](https://github.com/
 devtools::install_github("evanodell/refuge")
 ```
 
-
-
 ## Use
 
 Locating all restrooms close to a given set of coordinates, in this case somewhere in New Jersey:
 
-```{r}
+```{r eval=FALSE}
 library(refuge)
 
 bathrooms <- rfg_location(lat=39, lng=-75)
-
-tibble::glimpse(bathrooms)
-
 ```
 
 
 Locating all unisex, accessible restrooms in Toronto, using the `rfg_search()` function.
 
-```{r}
-
+```{r eval=FALSE}
 toronto <- rfg_search("toronto", accessible = TRUE, unisex = TRUE)
-
-tibble::glimpse(toronto)
-
 ```
 
 For more detailed examples, check out the [vignette](https://docs.evanodell.com/refuge/articles/introduction.html).
 
 ## Citing `refuge`
 
-Odell E (2018). _refuge: Locate Trans and Intersex-Friendly Toilets_. doi:
-10.5281/zenodo.1219900 (URL: http://doi.org/10.5281/zenodo.1219900), R package version
-`r packageVersion("refuge")`, <URL: https://github.com/evanodell/refuge>.
+Odell E (2018). _refuge: Locate Trans and Intersex-Friendly Toilets_. doi: [10.5281/zenodo.1219900](https://doi.org/10.5281/zenodo.1219900), R package version `r packageVersion("refuge")`, <URL: https://github.com/evanodell/refuge>.
 
 A BibTeX entry for LaTeX users is
 
@@ -97,7 +86,7 @@ A BibTeX entry for LaTeX users is
 
 ## Notes
 
-Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.md).
+Please note that this project is released with a [Contributor Code of Conduct](https://github.com/evanodell/refuge/blob/master/CODE_OF_CONDUCT.md).
   By participating in this project you agree to abide by its terms.
   
 This project is not affiliated with the [Refuge Restrooms](https://www.refugerestrooms.org/) application.
