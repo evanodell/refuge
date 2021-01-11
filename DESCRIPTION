@@ -26,12 +26,6 @@ Suggests:
     covr,
     testthat,
     knitr,
-    rmarkdown,
-    ggplot2,
-    magrittr,
-    viridis,
-    scales,
-    usmap,
-    stringi
+    rmarkdown
 VignetteBuilder: knitr
 Roxygen: list(markdown = TRUE)
