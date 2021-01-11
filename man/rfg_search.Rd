@@ -41,4 +41,5 @@ Restroom record search
 \dontrun{
 s <- rfg_search(search = "toronto")
 }
+
 }

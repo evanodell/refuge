@@ -13,4 +13,3 @@ ada_uni_function <- function(accessible, unisex) {
 
   paste0(x, y)
 }
-

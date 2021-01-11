@@ -47,4 +47,5 @@ given date.
 \dontrun{
 q <- rfg_date("2017-11-04")
 }
+
 }

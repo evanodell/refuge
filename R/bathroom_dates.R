@@ -20,7 +20,7 @@
 #' \dontrun{
 #' q <- rfg_date("2017-11-04")
 #' }
-
+#'
 rfg_date <- function(date = NULL, accessible = FALSE, unisex = FALSE,
                      updated = FALSE, verbose = TRUE, tidy = FALSE) {
   if (is.null(date)) stop("Please enter a date", call. = FALSE)

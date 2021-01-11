@@ -42,4 +42,5 @@ and organised.
 \dontrun{
 a <- rfg_all_restrooms(accessible = TRUE, unisex = TRUE)
 }
+
 }
